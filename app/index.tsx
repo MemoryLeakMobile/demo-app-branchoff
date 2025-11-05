@@ -1,10 +1,25 @@
-// import { Button } from '@/components/Button';
-// import { getData, removeData } from '@/utils/asyncStorage';
-// import { router } from 'expo-router';
-// import { useEffect } from 'react';
-// import { Text, View } from 'react-native';
+import { getData } from '@/utils/asyncStorage';
+import { router } from 'expo-router';
+import React, { useEffect } from 'react';
+import { View } from 'react-native';
 
-export default function HomeScreen() {}
+export default function HomeScreen() {
+  useEffect(() => {
+    checkFirstTimeOpen();
+  }, []);
+  const checkFirstTimeOpen = async () => {
+    let onboarded = await getData('onboarded');
+    if (onboarded !== '1') {
+      router.replace('/onboarding');
+    } else {
+      router.replace('/bksched/main-page')
+    }
+  };
+  return (
+    <View>
+    </View>
+  );
+}
 
 // useEffect(() => {
 //   checkFirstTimeOpen();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, PressableProps, Text } from 'react-native';
+import { Pressable, PressableProps, StyleSheet, Text } from 'react-native';
 
 type ButtonVariant = 'primary' | 'secondary' | 'danger';
 
@@ -18,8 +18,14 @@ export const Button: React.FC<ButtonProps> = ({ title, onPress, className, child
     danger: 'bg-red-500 active:bg-red-300 ',
   };
   return (
-    <Pressable onPress={onPress} className={'px-6 py-4 m-1 rounded-md ' + variants[variant] + className} {...props}>
-      {children ? children : <Text className="text-white">{title}</Text>}
+    <Pressable onPress={onPress} className={'px-6 py-4 m-1 rounded-md ' + variants[variant] + className} style={styles.rounded} {...props}>
+      {children ? children : <Text className="text-white text-center">{title}</Text>}
     </Pressable>
   );
 };
+
+const styles = StyleSheet.create({
+  rounded: {
+    borderRadius: 150,
+  }
+});
