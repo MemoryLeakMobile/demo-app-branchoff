@@ -9,7 +9,7 @@ const listData = [
 ];
 
 const ListItem = ({ title, subtitle, time }: { title: string, subtitle: string, time: string }) => (
-  <View className="flex-row items-center px-6 py-4 border-b border-gray-300">
+  <View className="flex-row items-center px-6 py-4">
     <View className="p-3 rounded-lg mr-4" style={{ backgroundColor: '#DCD7E3' }}>
       <Feather name="layers" size={24} color="#333" />
     </View>
