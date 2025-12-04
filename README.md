@@ -52,3 +52,37 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## 🧪 Testing Guide
+
+This project uses **Jest** and **React Native Testing Library** to test both UI components and application logic.
+
+### 1. Run all tests
+
+```bash
+npm run test
+```
+
+This command will:
+
+- Execute all test files inside the `__tests__/` directory
+- Display pass/fail results in the terminal
+- Automatically watch file changes in development mode
+
+### 2. Run tests with coverage report
+
+```bash
+npm run test:coverage
+```
+
+This command will:
+
+- Generate a **coverage report**
+- Export results to:
+
+```
+coverage/
+└── index.html
+```
+
+You can open `coverage/index.html` in your browser to view a detailed coverage dashboard (statements, branches, functions, lines).
