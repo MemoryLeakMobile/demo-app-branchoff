@@ -1,5 +1,7 @@
 [![React Native CI - Test, Report & SonarCloud](https://github.com/MemoryLeakMobile/demo-app-branchoff/actions/workflows/ci.yml/badge.svg)](https://github.com/MemoryLeakMobile/demo-app-branchoff/actions/workflows/ci.yml)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MemoryLeakMobile_demo-app-branchoff&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MemoryLeakMobile_demo-app-branchoff)
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
