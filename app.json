@@ -46,8 +46,8 @@
         "@sentry/react-native/expo",
         {
           "url": "https://sentry.io/",
-          "project": "react-native",
-          "organization": "nghiaho310pf"
+          "project": "demo-app",
+          "organization": "memoryleakmobile"
         }
       ]
     ],
